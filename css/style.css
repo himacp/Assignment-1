@@ -1,0 +1,252 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+ 
+body {
+  background-image: url("../images/back.jpg")
+}
+body {
+  font: 100% sans-serif;
+  margin: 0em;
+  color: black;
+}
+h1,h2,{
+  font-family: Arial, Helvetica, sans-serif
+  font-weight: 30;
+}
+
+a {
+  color: #3d6dbe;
+  text-decoration: none;
+}
+
+a:focus,a:hover
+ {
+  color: #6594e0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.8;
+  margin-top: 0em;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*....Images....*/
+#logo
+{
+  float:left;
+  margin-top: 1px;;
+  margin-left:20px;
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+
+}
+
+/*..............Header.........*/
+@media screen and (min-width: 50em){
+header {
+  background-color:none;
+  background-image: url(../images/hi.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 0%;
+  text-align: center;
+  height: 300px;
+  background-size: 100%;
+ 
+}
+
+.head h1 {
+  padding-top:150px;
+  color:black;
+  font-size: 90px;
+  margin: 0;
+  letter-spacing: 1px;
+  opacity: .6;
+  top: 370px;
+  font-weight: 1000;
+}
+
+.head p {
+  color:Black;
+  font-size: 18px;
+  padding-bottom: 1.3em;
+  padding-top: .5em;
+  opacity: .8;
+  top: 360px;
+  font-style:sans-serif;
+}
+
+
+section h1 {
+  font-size: 1.8em;
+  line-height: 1em;
+  margin-bottom: .6em;
+}
+
+section ul li{
+  font-size: 1em;
+  margin-left: -10px;
+  line-height: 1.8;
+}
+}
+
+/*.............. Introduction ......*/
+@media screen and (min-width: 50em) {
+  .Objective{
+      height:60px;
+  }
+
+
+/*..............Footer ......*/
+@media screen and (min-width: 50em){
+footer {
+  margin-bottom: 1em;
+  color:blue;
+}
+
+footer hr {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.Objective {
+  text-align: center;
+}
+}
+@media screen and (min-width: 50em) {
+  header {
+    height: 700px;
+  }
+  
+  header h1 {
+    font-size: 3.2em;
+    top: 540px;
+  }
+  
+  header p {
+    top: 530px;
+    font-size: 1.5em;
+  }
+}
+
+/*........ Types of Yoga.........*/
+.education {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 40em) {
+  .education {
+    width: 70%;
+  }
+
+
+/*...........Reach.........*/ 
+@media screen and (min-width: 50em){
+.Reach h1{
+  text-align: center;
+}
+.Reach p
+{
+  width:auto;
+  letter-spacing: 1px;
+  font-style:sans-serif;
+  text-align: center;
+}
+#EXP{
+  margin-bottom: -20px;
+}
+}
+/*....Navigation Bar...*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:60px;
+}
+
+.navbar p
+{
+ font-family: cursive;
+ font-size: 20px;
+ float:left;
+ color: #f2f2f2;
+ padding-left: 11px ;
+ padding-top:14px;
+ margin-left:5px;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+@media screen and (min-width: 50em) {
+  .navbar{
+      height:60px;
+  }
+
+}
+
+/*...............Flex......*/
+@media screen and (min-width: 50em){
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container > p {
+  background-color: black;
+  width: 225px;
+  height: 150px;
+  margin: 8px;
+  color: wheat;
+  text-align: center;
+  line-height: 130px;
+  font-size: 30px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  background-color:none;
+}
+
+.flex > div {
+  background-color:none;
+  width: 1000px;
+  margin: 5px;
+  line-height: 30px;
+  font-size: 17px;
+}
+.flex ul li{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 30;
+}
+.flex h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-display: center;
+  font-size: 25px;
+  font-weight: 30;
+} 
+}
