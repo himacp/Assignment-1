@@ -166,6 +166,7 @@ footer hr {
 }
 }
 /*....Navigation Bar...*/
+@media screen and (min-width: 50em){
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -198,6 +199,7 @@ footer hr {
 .navbar a:hover {
   background: #ddd;
   color: black;
+}
 }
 
 @media screen and (min-width: 50em) {
@@ -248,5 +250,8 @@ footer hr {
   font-display: center;
   font-size: 25px;
   font-weight: 30;
-} 
+}
+.flex-container img{
+  width:auto;
+}
 }
