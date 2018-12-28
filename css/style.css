@@ -1,18 +1,14 @@
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
- 
+
 body {
   background-image: url("../images/back.jpg")
 }
 body {
   font: 100% sans-serif;
   margin: 0em;
-  color: black;
-}
-h1,h2,{
-  font-family: Arial, Helvetica, sans-serif
-  font-weight: 30;
+  color: #666;
 }
 
 a {
@@ -34,104 +30,196 @@ p {
 img {
   max-width: 100%;
 }
-
+.container{
+  flex:row;
+}
+.container a{
+  color: black;
+}
+.sitename{
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
 /*....Images....*/
 #logo
 {
   float:left;
-  margin-top: 1px;;
+  margin-top: 15px;;
   margin-left:20px;
-  width:60px;
-  height:60px;
+  widows: 45px;
+  height:30px;
   border-radius: 50%;
-
 }
-
-/*..............Header.........*/
-@media screen and (min-width: 50em){
-header {
-  background-color:none;
-  background-image: url(../images/hi.jpg);
-  background-repeat: no-repeat;
-  margin-bottom: 0%;
+/*....Section....*/
+.Reach p{
   text-align: center;
-  height: 300px;
-  background-size: 100%;
- 
 }
-
-.head h1 {
-  padding-top:150px;
+/*....Footer....*/
+.footer ul {
+  display:inline;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 0px; 
+  color:black; 
+}
+.footer li {
+  display:inline;
+  text-align: center;
+  text-decoration: none; 
   color:black;
-  font-size: 90px;
-  margin: 0;
-  letter-spacing: 1px;
-  opacity: .6;
-  top: 370px;
-  font-weight: 1000;
 }
-
-.head p {
-  color:Black;
-  font-size: 18px;
-  padding-bottom: 1.3em;
-  padding-top: .5em;
-  opacity: .8;
-  top: 360px;
-  font-style:sans-serif;
-}
-
-
-section h1 {
-  font-size: 1.8em;
-  line-height: 1em;
-  margin-bottom: .6em;
-}
-
-section ul li{
-  font-size: 1em;
-  margin-left: -10px;
-  line-height: 1.8;
-}
-}
-
-/*.............. Introduction ......*/
-@media screen and (min-width: 50em) {
-  .Objective{
-      height:60px;
-  }
-
-
-/*..............Footer ......*/
-@media screen and (min-width: 50em){
-footer {
-  margin-bottom: 1em;
-  color:blue;
-}
-
-footer hr {
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-
-.Objective {
+.footer a{
+  color: black;
   text-align: center;
 }
+
+.footer {
+  margin-bottom: 1em;
+  margin-bottom: 0px;
+  text-align: center;
 }
-@media screen and (min-width: 50em) {
-  header {
-    height: 700px;
+.objective {
+  text-align: center;
+  margin-top: 12em;
+}
+
+.objective h1{
+  margin-top: 10em;
+}
+
+.Reach h1{
+  text-align: center;
+}
+
+.newtwit{
+  margin-left: 600px;
+  margin-bottom: 1em;
+  margin-bottom: 0px;
+}
+/*....Navigation....*/
+.navigation {
+  list-style: none;
+  width: 100%;
+  background:#444444;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+   }
+
+   .navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  width: 100%;
+  padding-left: 85px;
+  padding-right: 85px;
+   }
+
+   .navigation a:hover {
+  background-color: #ddd;
+  color: black;
+   }
+   
+
+
+   @media all and (max-width: 800px) 
+   {
+  .navigation {
+    justify-content: space-around;
   }
+   }
+
+   @media all and (max-width: 600px) 
+   {
+    .navigation {
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      padding: 0;
+    } 
+   .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+    .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+   }
+   body {
+    margin: 0;
+    padding: 0;
+   }
+   header {
+    background-color: whitesmoke;
+    text-align: center;
+   }
+
+   .header-div {
+    position:fixed;
+    background-color: #4C7DA3;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+   }
+
+   .container{
+     display: flex;
+     flex-direction: row;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  }
+
+ .container img{
+   width: 70px;
+   height: 70px;
+   margin: 10px;
+   margin-bottom: 0px;
+  }
+
+ .sitename{
+   margin-left: 0;
+   color: black;
+  }
+
+   @media all and (max-width: 600px) {
+  .content {
+    font-family: 'Archivo', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #5B545 ;
+  }
+  h2 {
+    display: flex;
+    color: #4C7DA3;
+    padding-top: 30px;
+  }
+  .container h1 {
+    font-size: 5em;
+    margin-top: 0.5em;
+  }
+
+@media screen and (min-width: 50em){
+  .Objective{
+    height:60px;
+}
+.footer {
+  margin-bottom: 1em;
+  color:black;
   
-  header h1 {
-    font-size: 3.2em;
-    top: 540px;
-  }
-  
-  header p {
-    top: 530px;
-    font-size: 1.5em;
-  }
+}
+.footer ul li {
+  display:inline;
+  text-align: center;
+  text-decoration: none;
+  color:black;  }
+}
 }
 
 /*........ Types of Yoga.........*/
@@ -147,8 +235,12 @@ footer hr {
   .education {
     width: 70%;
   }
-
-
+  .footer ul li {
+    display:inline;
+    text-decoration: none;
+    text-align: center; 
+   }
+}
 /*...........Reach.........*/ 
 @media screen and (min-width: 50em){
 .Reach h1{
@@ -161,62 +253,16 @@ footer hr {
   font-style:sans-serif;
   text-align: center;
 }
-#EXP{
-  margin-bottom: -20px;
-}
-}
-/*....Navigation Bar...*/
-@media screen and (min-width: 50em){
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height:60px;
-}
-
-.navbar p
-{
- font-family: cursive;
- font-size: 20px;
- float:left;
- color: #f2f2f2;
- padding-left: 11px ;
- padding-top:14px;
- margin-left:5px;
-}
-.navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-}
-
-@media screen and (min-width: 50em) {
-  .navbar{
-      height:60px;
-  }
-
 }
 
 /*...............Flex......*/
-@media screen and (min-width: 50em){
+@media screen and (min-width: 50em)
+{
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .flex-container > p {
   background-color: black;
   width: 225px;
@@ -232,7 +278,6 @@ footer hr {
   justify-content: center;
   background-color:none;
 }
-
 .flex > div {
   background-color:none;
   width: 1000px;
