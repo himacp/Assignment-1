@@ -1,4 +1,4 @@
 # Assignment
 YOGA Website
-link:https://github.com/himacp/Assignment-1
+link: https://himacp.github.io/Assignment-1/
 ## Steps to run
